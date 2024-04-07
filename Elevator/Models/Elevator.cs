@@ -13,17 +13,17 @@ public class Elevator
 
     public void GoToFloor(int floor)
     {
-        if (floor > _totalStories)
+        if (floor < 1 || floor > _totalStories)
         {
             Console.WriteLine($"No {floor} floor in the building");
         }
         else if (_person.HasAccess(floor))
         {
-            Console.WriteLine($"Elevating to {floor}");
+            Console.WriteLine($"Elevating to floor {floor}");
         }
         else
         {
-            Console.WriteLine($"No Access to {floor}");
+            Console.WriteLine($"No Access to floor {floor}");
         }
     }
 }
