@@ -68,7 +68,7 @@ class Program
 
     private static string ReadGuestAccessibleFloors()
     {
-        Console.WriteLine("Enter Stories where Guess is accessible: ");
+        Console.WriteLine("Enter Stories where Guest is accessible: ");
         return Console.ReadLine() ?? string.Empty;
     }
 }
