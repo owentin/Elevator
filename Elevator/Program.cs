@@ -1,4 +1,6 @@
-﻿namespace Elevator;
+﻿using Elevator.Models;
+
+namespace Elevator;
 
 class Program
 {
@@ -10,7 +12,7 @@ class Program
         var guestAccessibleFloors = GetGuestAccessibleFloors();
 
         var guest = new Person(guestAccessibleFloors);
-        var elevator = new Elevator(guest, stories);
+        var elevator = new Models.Elevator(guest, stories);
 
         var typedFloor = string.Empty;
         while (!typedFloor.Equals(exit, StringComparison.CurrentCultureIgnoreCase))

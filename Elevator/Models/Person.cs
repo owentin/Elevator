@@ -1,4 +1,4 @@
-﻿namespace Elevator;
+﻿namespace Elevator.Models;
 
 public class Person
 {
